@@ -18,8 +18,8 @@ require (
 
 require (
 	github.com/aperturerobotics/goprotowrap v0.3.1 // master
-	github.com/aperturerobotics/protobuf-go-lite v0.2.1 // master
-	github.com/aperturerobotics/starpc v0.22.8
+	github.com/aperturerobotics/protobuf-go-lite v0.3.1 // master
+	github.com/aperturerobotics/starpc v0.30.0
 	github.com/aperturerobotics/template v1.13.2
 )
 
@@ -135,6 +135,7 @@ require (
 	github.com/olekukonko/tablewriter v0.0.5 // indirect
 	github.com/pelletier/go-toml v1.9.5 // indirect
 	github.com/pelletier/go-toml/v2 v2.0.5 // indirect
+	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/polyfloyd/go-errorlint v1.4.5 // indirect
 	github.com/prometheus/client_golang v1.12.1 // indirect
