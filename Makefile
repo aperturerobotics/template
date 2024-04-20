@@ -1,4 +1,4 @@
-# https://github.com/aperturerobotics/protobuf-project
+# https://github.com/aperturerobotics/template
 
 SHELL:=bash
 PROTOWRAP=hack/bin/protowrap

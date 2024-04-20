@@ -3,9 +3,11 @@ module github.com/aperturerobotics/template
 go 1.22
 
 require (
-	github.com/aperturerobotics/protobuf-go-lite v0.3.1 // indirect; latest
+	github.com/aperturerobotics/protobuf-go-lite v0.3.1 // latest
 	github.com/aperturerobotics/starpc v0.30.0 // latest
 )
+
+require github.com/pkg/errors v0.9.1
 
 require (
 	github.com/aperturerobotics/util v1.17.0 // indirect
@@ -28,7 +30,6 @@ require (
 	github.com/multiformats/go-multihash v0.2.3 // indirect
 	github.com/multiformats/go-multistream v0.5.0 // indirect
 	github.com/multiformats/go-varint v0.0.7 // indirect
-	github.com/pkg/errors v0.9.1 // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	github.com/spaolacci/murmur3 v1.1.0 // indirect
 	golang.org/x/crypto v0.19.0 // indirect
