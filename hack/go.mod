@@ -18,7 +18,7 @@ require (
 
 require (
 	github.com/aperturerobotics/goprotowrap v0.3.1 // master
-	github.com/aperturerobotics/protobuf-go-lite v0.4.1 // master
+	github.com/aperturerobotics/protobuf-go-lite v0.4.3 // master
 	github.com/aperturerobotics/starpc v0.30.0
 	github.com/aperturerobotics/template v1.13.2
 )
