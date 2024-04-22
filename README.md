@@ -15,6 +15,12 @@ See [protobuf-project] for a more extensive example.
 
 ## Usage
 
+Start by downloading the dependencies:
+
+```bash
+yarn
+```
+
 Protobuf imports use Go paths and package names:
 
 ```protobuf

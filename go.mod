@@ -4,13 +4,13 @@ go 1.22
 
 require (
 	github.com/aperturerobotics/protobuf-go-lite v0.5.0 // latest
-	github.com/aperturerobotics/starpc v0.30.0 // latest
+	github.com/aperturerobotics/starpc v0.31.3 // latest
 )
 
 require github.com/pkg/errors v0.9.1
 
 require (
-	github.com/aperturerobotics/util v1.17.1 // indirect
+	github.com/aperturerobotics/util v1.18.1 // indirect
 	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.2.0 // indirect
 	github.com/ipfs/go-cid v0.4.1 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
