@@ -22,7 +22,7 @@
     "build": "tsc --project tsconfig.json --noEmit false --module ES6 --target es2022 --outDir ./dist/",
     "check": "npm run typecheck",
     "typecheck": "tsc --noEmit",
-    "deps": "depcheck --ignores bufferutil,esbuild,starpc,rimraf,@bufbuild/protoc-gen-es,@aperturerobotics/ts-common,@typescript-eslint/parser,@typescript-eslint/eslint-plugin,eslint-config-prettier",
+    "deps": "depcheck --ignore-patterns=.eslintrc.js,package.json --ignores depcheck,prettier,typescript,starpc,@bufbuild/protoc-gen-es,@aperturerobotics/ts-common,@go/github.com",
     "codegen": "npm run gen",
     "ci": "npm run build && npm run lint:js && npm run lint:go",
     "format": "npm run format:go && npm run format:js && npm run format:config",
