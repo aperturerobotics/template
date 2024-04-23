@@ -2,10 +2,15 @@
 // @generated from file github.com/aperturerobotics/template/example/example.proto (package example, syntax proto3)
 /* eslint-disable */
 
-import { EchoMsg } from "./example_pb.js";
-import type { PartialMessage } from "@bufbuild/protobuf";
-import { MethodKind } from "@bufbuild/protobuf";
-import { buildDecodeMessageTransform, buildEncodeMessageTransform, MessageStream, ProtoRpc } from "starpc";
+import { EchoMsg } from './example_pb.js'
+import type { PartialMessage } from '@bufbuild/protobuf'
+import { MethodKind } from '@bufbuild/protobuf'
+import {
+  buildDecodeMessageTransform,
+  buildEncodeMessageTransform,
+  MessageStream,
+  ProtoRpc,
+} from 'starpc'
 
 /**
  * Echoer service returns the given message.
@@ -13,7 +18,7 @@ import { buildDecodeMessageTransform, buildEncodeMessageTransform, MessageStream
  * @generated from service example.Echoer
  */
 export const EchoerDefinition = {
-  typeName: "example.Echoer",
+  typeName: 'example.Echoer',
   methods: {
     /**
      * Echo returns the given message.
@@ -21,7 +26,7 @@ export const EchoerDefinition = {
      * @generated from rpc example.Echoer.Echo
      */
     Echo: {
-      name: "Echo",
+      name: 'Echo',
       I: EchoMsg,
       O: EchoMsg,
       kind: MethodKind.Unary,
@@ -32,7 +37,7 @@ export const EchoerDefinition = {
      * @generated from rpc example.Echoer.EchoServerStream
      */
     EchoServerStream: {
-      name: "EchoServerStream",
+      name: 'EchoServerStream',
       I: EchoMsg,
       O: EchoMsg,
       kind: MethodKind.ServerStreaming,
@@ -43,7 +48,7 @@ export const EchoerDefinition = {
      * @generated from rpc example.Echoer.EchoClientStream
      */
     EchoClientStream: {
-      name: "EchoClientStream",
+      name: 'EchoClientStream',
       I: EchoMsg,
       O: EchoMsg,
       kind: MethodKind.ClientStreaming,
@@ -54,13 +59,13 @@ export const EchoerDefinition = {
      * @generated from rpc example.Echoer.EchoBidiStream
      */
     EchoBidiStream: {
-      name: "EchoBidiStream",
+      name: 'EchoBidiStream',
       I: EchoMsg,
       O: EchoMsg,
       kind: MethodKind.BiDiStreaming,
     },
-  }
-} as const;
+  },
+} as const
 
 /**
  * Echoer service returns the given message.
@@ -74,9 +79,9 @@ export interface Echoer {
    * @generated from rpc example.Echoer.Echo
    */
   Echo(
-request: PartialMessage<EchoMsg>, abortSignal?: AbortSignal
-): 
-Promise<PartialMessage<EchoMsg>>
+    request: PartialMessage<EchoMsg>,
+    abortSignal?: AbortSignal,
+  ): Promise<PartialMessage<EchoMsg>>
 
   /**
    * EchoServerStream is an example of a server -> client one-way stream.
@@ -84,9 +89,9 @@ Promise<PartialMessage<EchoMsg>>
    * @generated from rpc example.Echoer.EchoServerStream
    */
   EchoServerStream(
-request: PartialMessage<EchoMsg>, abortSignal?: AbortSignal
-): 
-MessageStream<EchoMsg>
+    request: PartialMessage<EchoMsg>,
+    abortSignal?: AbortSignal,
+  ): MessageStream<EchoMsg>
 
   /**
    * EchoClientStream is an example of client->server one-way stream.
@@ -94,9 +99,9 @@ MessageStream<EchoMsg>
    * @generated from rpc example.Echoer.EchoClientStream
    */
   EchoClientStream(
-request: MessageStream<EchoMsg>, abortSignal?: AbortSignal
-): 
-Promise<PartialMessage<EchoMsg>>
+    request: MessageStream<EchoMsg>,
+    abortSignal?: AbortSignal,
+  ): Promise<PartialMessage<EchoMsg>>
 
   /**
    * EchoBidiStream is an example of a two-way stream.
@@ -104,10 +109,9 @@ Promise<PartialMessage<EchoMsg>>
    * @generated from rpc example.Echoer.EchoBidiStream
    */
   EchoBidiStream(
-request: MessageStream<EchoMsg>, abortSignal?: AbortSignal
-): 
-MessageStream<EchoMsg>
-
+    request: MessageStream<EchoMsg>,
+    abortSignal?: AbortSignal,
+  ): MessageStream<EchoMsg>
 }
 
 export const EchoerServiceName = EchoerDefinition.typeName
@@ -129,9 +133,9 @@ export class EchoerClient implements Echoer {
    * @generated from rpc example.Echoer.Echo
    */
   async Echo(
-request: PartialMessage<EchoMsg>, abortSignal?: AbortSignal
-): 
-Promise<PartialMessage<EchoMsg>> {
+    request: PartialMessage<EchoMsg>,
+    abortSignal?: AbortSignal,
+  ): Promise<PartialMessage<EchoMsg>> {
     const requestMsg = new EchoMsg(request)
     const result = await this.rpc.request(
       this.service,
@@ -148,9 +152,9 @@ Promise<PartialMessage<EchoMsg>> {
    * @generated from rpc example.Echoer.EchoServerStream
    */
   EchoServerStream(
-request: PartialMessage<EchoMsg>, abortSignal?: AbortSignal
-): 
-MessageStream<EchoMsg> {
+    request: PartialMessage<EchoMsg>,
+    abortSignal?: AbortSignal,
+  ): MessageStream<EchoMsg> {
     const requestMsg = new EchoMsg(request)
     const result = this.rpc.serverStreamingRequest(
       this.service,
@@ -167,9 +171,9 @@ MessageStream<EchoMsg> {
    * @generated from rpc example.Echoer.EchoClientStream
    */
   async EchoClientStream(
-request: MessageStream<EchoMsg>, abortSignal?: AbortSignal
-): 
-Promise<PartialMessage<EchoMsg>> {
+    request: MessageStream<EchoMsg>,
+    abortSignal?: AbortSignal,
+  ): Promise<PartialMessage<EchoMsg>> {
     const result = await this.rpc.clientStreamingRequest(
       this.service,
       EchoerDefinition.methods.EchoClientStream.name,
@@ -185,9 +189,9 @@ Promise<PartialMessage<EchoMsg>> {
    * @generated from rpc example.Echoer.EchoBidiStream
    */
   EchoBidiStream(
-request: MessageStream<EchoMsg>, abortSignal?: AbortSignal
-): 
-MessageStream<EchoMsg> {
+    request: MessageStream<EchoMsg>,
+    abortSignal?: AbortSignal,
+  ): MessageStream<EchoMsg> {
     const result = this.rpc.bidirectionalStreamingRequest(
       this.service,
       EchoerDefinition.methods.EchoBidiStream.name,
@@ -196,5 +200,4 @@ MessageStream<EchoMsg> {
     )
     return buildDecodeMessageTransform(EchoMsg)(result)
   }
-
 }

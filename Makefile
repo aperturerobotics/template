@@ -11,12 +11,9 @@ export GO111MODULE=on
 undefine GOARCH
 undefine GOOS
 
-.PHONY: $(MAKECMDGOALS) help
+.PHONY: $(MAKECMDGOALS)
 
-all: help
-
-vendor:
-	go mod vendor
+all:
 
 $(COMMON_MAKEFILE): vendor
 	@if [ ! -f $(COMMON_MAKEFILE) ]; then \
@@ -29,3 +26,6 @@ $(MAKECMDGOALS): $(COMMON_MAKEFILE)
 
 %: $(COMMON_MAKEFILE)
 	@$(MAKE) -C $(COMMON_DIR) PROJECT_DIR="$(PROJECT_DIR)" $@
+
+vendor:
+	go mod vendor
