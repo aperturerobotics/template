@@ -12,12 +12,6 @@
       "matchManagers": ["gomod"],
       "matchDepTypes": ["replace"],
       "enabled": false
-    },
-    {
-      "matchPackageNames": ["github.com/aperturerobotics/common"],
-      "postUpgradeTasks": {
-        "commands": ["yarn gen"]
-      }
     }
   ]
 }
