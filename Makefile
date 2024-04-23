@@ -15,9 +15,11 @@ undefine GOOS
 
 all: help
 
-$(COMMON_MAKEFILE):
+vendor:
 	go mod vendor
-	if [ ! -f $(COMMON_MAKEFILE) ]; then \
+
+$(COMMON_MAKEFILE): vendor
+	@if [ ! -f $(COMMON_MAKEFILE) ]; then \
 		echo "Please add github.com/aperturerobotics/common to your go.mod."; \
 		exit 1; \
 	fi
