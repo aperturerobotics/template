@@ -3,7 +3,7 @@ module github.com/aperturerobotics/template
 go 1.22
 
 require (
-	github.com/aperturerobotics/common v0.11.2-0.20240423010730-bc84196fc2b4 // latest
+	github.com/aperturerobotics/common v0.11.2-0.20240423011704-51792d2d5df5 // latest
 	github.com/aperturerobotics/protobuf-go-lite v0.5.0 // latest
 	github.com/aperturerobotics/starpc v0.31.3 // latest
 )
