@@ -3,12 +3,12 @@ module github.com/aperturerobotics/template
 go 1.22
 
 require (
-	github.com/aperturerobotics/common v0.14.0 // latest
+	github.com/aperturerobotics/common v0.14.1 // latest
 	github.com/aperturerobotics/protobuf-go-lite v0.6.0 // latest
 	github.com/aperturerobotics/starpc v0.31.3 // latest
 )
 
-require github.com/pkg/errors v0.9.1
+require github.com/pkg/errors v0.9.1 // indirect
 
 require (
 	github.com/aperturerobotics/json-iterator-lite v1.0.0 // indirect

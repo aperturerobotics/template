@@ -6,6 +6,7 @@ import {
   createMessageType,
   Message,
   MessageType,
+  PartialFieldInfo,
 } from '@aptre/protobuf-es-lite'
 
 export const protobufPackage = 'example'
@@ -19,13 +20,13 @@ export interface EchoMsg extends Message<EchoMsg> {
   /**
    * @generated from field: string body = 1;
    */
-  body: string
+  body?: string
 }
 
 export const EchoMsg: MessageType<EchoMsg> = createMessageType({
   typeName: 'example.EchoMsg',
   fields: [
     { no: 1, name: 'body', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
-  ],
+  ] as readonly PartialFieldInfo[],
   packedByDefault: true,
 })
