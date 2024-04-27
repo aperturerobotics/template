@@ -26,7 +26,7 @@
     "codegen": "npm run gen",
     "ci": "npm run build && npm run lint:js && npm run lint:go",
     "format": "npm run format:go && npm run format:js && npm run format:config",
-    "format:config": "prettier --write tsconfig.json package.json",
+    "format:config": "prettier --write package.json",
     "format:go": "make format",
     "format:js": "npm run format:js:changed",
     "format:js:changed": "git diff --name-only --diff-filter=d HEAD | grep '\\(\\.ts\\|\\.tsx\\|\\.html\\|\\.css\\|\\.scss\\)$' | xargs -I {} prettier --write {}",
@@ -39,10 +39,6 @@
     "lint:js": "ESLINT_USE_FLAT_CONFIG=false eslint -c .eslintrc.js ./example",
     "prepare": "go mod vendor",
     "precommit": "npm run format"
-  },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true
   },
   "devDependencies": {
     "@aptre/common": "^0.14.3",
