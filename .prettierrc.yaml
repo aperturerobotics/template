@@ -1,3 +1,1 @@
-semi: false
-singleQuote: true
-experimentalTernaries: true
+./vendor/github.com/aperturerobotics/common/.prettierrc.yaml

@@ -7,12 +7,12 @@
   resolved "https://registry.yarnpkg.com/@aashutoshrathi/word-wrap/-/word-wrap-1.2.6.tgz#bd9154aec9983f77b3a034ecaa015c2e4201f6cf"
   integrity sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==
 
-"@aptre/common@^0.14.3":
-  version "0.14.3"
-  resolved "https://registry.yarnpkg.com/@aptre/common/-/common-0.14.3.tgz#410c3c5f7543c8252fea8f760ab8795d112cad95"
-  integrity sha512-tYhe86jvQUTnp7Jv4VyiDkqs79z59GiRyNJxvvqJI7UPgVMxQAiT4j9TOKQllFk1ZNzfqnRQH4EYme85TkD0fw==
+"@aptre/common@^0.14.5":
+  version "0.14.5"
+  resolved "https://registry.yarnpkg.com/@aptre/common/-/common-0.14.5.tgz#58f59a721dee63bfd8e47205fc6ba2afb2f907e1"
+  integrity sha512-nM2pbtxRA5kOLavUE5MQGDx+2jgqF3CUgBkZ2K6R82il6oAx4iRpVqpbfE4LwRpzu2jv5jCvjybNmqUWI2qmUQ==
   dependencies:
-    "@aptre/protobuf-es-lite" "^0.2.6"
+    "@aptre/protobuf-es-lite" "^0.2.7"
     "@bufbuild/protobuf" "^1.8.0"
     "@typescript-eslint/eslint-plugin" "^7.7.0"
     "@typescript-eslint/parser" "^7.7.0"
@@ -20,7 +20,7 @@
     eslint-config-prettier "^9.0.0"
     eslint-plugin-react-hooks "^4.6.1"
     eslint-plugin-unused-imports "^3.0.0"
-    starpc "^0.31.10"
+    starpc "^0.31.11"
 
 "@aptre/it-ws@^1.0.0":
   version "1.0.0"
@@ -33,7 +33,7 @@
     uint8arrays "^5.0.0"
     ws "^8.4.0"
 
-"@aptre/protobuf-es-lite@^0.2.6", "@aptre/protobuf-es-lite@^0.2.7":
+"@aptre/protobuf-es-lite@^0.2.7":
   version "0.2.7"
   resolved "https://registry.yarnpkg.com/@aptre/protobuf-es-lite/-/protobuf-es-lite-0.2.7.tgz#f35383eca312ff81c34cf846922e27e34d0ce2de"
   integrity sha512-zmgKcOD933JcXXYUtkUWokeokrCOIBaA1g+PHmWhcmOLxw/k9f8WENZjxljx6SfRJsWtRZXsEFriGq2QhkW6oA==
@@ -1765,7 +1765,7 @@ sprintf-js@~1.0.2:
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==
 
-starpc@^0.31.10, starpc@^0.31.11:
+starpc@^0.31.11:
   version "0.31.11"
   resolved "https://registry.yarnpkg.com/starpc/-/starpc-0.31.11.tgz#fa1a95420b8f9a4eefcf292cee474e995dc208c3"
   integrity sha512-AJ7wSS3cZYvCqOf5BHBXT+8xSbkgvOQKChYDSyBdHXR9a+3CEPYPvibwLcDxzQH8bqq2MCHcWCTsC9g3yqdbpQ==
