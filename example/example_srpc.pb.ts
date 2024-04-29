@@ -2,9 +2,8 @@
 // @generated from file github.com/aperturerobotics/template/example/example.proto (package example, syntax proto3)
 /* eslint-disable */
 
-import { EchoMsg } from './example_pb.js'
-import { MethodKind } from '@bufbuild/protobuf'
-import { Message } from '@aptre/protobuf-es-lite'
+import { EchoMsg } from './example.pb.js'
+import { Message, MethodKind } from '@aptre/protobuf-es-lite'
 import {
   buildDecodeMessageTransform,
   buildEncodeMessageTransform,
