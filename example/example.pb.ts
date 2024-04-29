@@ -2,10 +2,10 @@
 // @generated from file github.com/aperturerobotics/template/example/example.proto (package example, syntax proto3)
 /* eslint-disable */
 
-import type { MessageType, PartialFieldInfo } from "@aptre/protobuf-es-lite";
-import { createMessageType, Message } from "@aptre/protobuf-es-lite";
+import type { MessageType, PartialFieldInfo } from '@aptre/protobuf-es-lite'
+import { createMessageType, Message } from '@aptre/protobuf-es-lite'
 
-export const protobufPackage = "example";
+export const protobufPackage = 'example'
 
 /**
  * EchoMsg is the message body for Echo.
@@ -16,17 +16,13 @@ export type EchoMsg = Message<{
   /**
    * @generated from field: string body = 1;
    */
-  body?: string;
+  body?: string
+}>
 
-}>;
-
-export const EchoMsg: MessageType<EchoMsg> = createMessageType(
-  {
-    typeName: "example.EchoMsg",
-    fields: [
-        { no: 1, name: "body", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    ] as readonly PartialFieldInfo[],
-    packedByDefault: true,
-  },
-);
-
+export const EchoMsg: MessageType<EchoMsg> = createMessageType({
+  typeName: 'example.EchoMsg',
+  fields: [
+    { no: 1, name: 'body', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+  ] as readonly PartialFieldInfo[],
+  packedByDefault: true,
+})

@@ -23,7 +23,7 @@
     "build": "tsc --project tsconfig.json --noEmit false --outDir ./dist/",
     "check": "npm run typecheck",
     "typecheck": "tsc --noEmit",
-    "deps": "depcheck --ignore-patterns=.eslintrc.js,package.json --ignores depcheck,prettier,typescript,starpc,@aptre/protobuf-es-lite,@aperturerobotics/ts-common,@go/github.com",
+    "deps": "depcheck --ignore-patterns=.eslintrc.cjs,package.json --ignores depcheck,prettier,typescript,starpc,@aptre/protobuf-es-lite,@aperturerobotics/ts-common,@go/github.com",
     "codegen": "npm run gen",
     "ci": "npm run build && npm run lint:js && npm run lint:go",
     "format": "npm run format:go && npm run format:js && npm run format:config",
@@ -37,12 +37,12 @@
     "test:js": "echo No JS tests.",
     "lint": "npm run lint:go && npm run lint:js",
     "lint:go": "make lint",
-    "lint:js": "ESLINT_USE_FLAT_CONFIG=false eslint -c .eslintrc.js ./example",
+    "lint:js": "ESLINT_USE_FLAT_CONFIG=false eslint -c .eslintrc.cjs ./example",
     "prepare": "go mod vendor",
     "precommit": "npm run format"
   },
   "devDependencies": {
-    "@aptre/common": "^0.14.6",
+    "@aptre/common": "^0.14.8",
     "depcheck": "^1.4.7",
     "prettier": "^3.2.5",
     "typescript": "^5.1.6"
