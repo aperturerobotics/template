@@ -3,8 +3,8 @@ module github.com/aperturerobotics/template
 go 1.22
 
 require (
-	github.com/aperturerobotics/common v0.15.0 // latest
-	github.com/aperturerobotics/protobuf-go-lite v0.6.1 // latest
+	github.com/aperturerobotics/common v0.16.1 // latest
+	github.com/aperturerobotics/protobuf-go-lite v0.6.3 // latest
 	github.com/aperturerobotics/starpc v0.31.14 // latest
 )
 
@@ -34,7 +34,7 @@ require (
 	golang.org/x/crypto v0.19.0 // indirect
 	golang.org/x/exp v0.0.0-20240416160154-fe59bbe5cc7f // indirect
 	golang.org/x/sys v0.18.0 // indirect
-	google.golang.org/protobuf v1.33.0 // indirect
+	google.golang.org/protobuf v1.34.1 // indirect
 	lukechampine.com/blake3 v1.2.1 // indirect
 	nhooyr.io/websocket v1.8.11 // indirect
 )

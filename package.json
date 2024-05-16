@@ -38,13 +38,14 @@
     "lint": "npm run lint:go && npm run lint:js",
     "lint:go": "make lint",
     "lint:js": "ESLINT_USE_FLAT_CONFIG=false eslint -c .eslintrc.cjs ./example",
-    "prepare": "go mod vendor",
+    "prepare": "go mod vendor && rimraf ./.tools",
     "precommit": "npm run format"
   },
   "devDependencies": {
-    "@aptre/common": "^0.15.1",
+    "@aptre/common": "^0.16.1",
     "depcheck": "^1.4.7",
     "prettier": "^3.2.5",
+    "rimraf": "^5.0.7",
     "typescript": "^5.1.6"
   },
   "dependencies": {
