@@ -42,7 +42,7 @@
     "precommit": "npm run format"
   },
   "devDependencies": {
-    "@aptre/common": "^0.16.1",
+    "@aptre/common": "^0.16.10",
     "depcheck": "^1.4.7",
     "prettier": "^3.2.5",
     "rimraf": "^5.0.7",
@@ -50,7 +50,7 @@
   },
   "dependencies": {
     "@aptre/protobuf-es-lite": "^0.4.1",
-    "starpc": "^0.32.0"
+    "starpc": "^0.32.13"
   },
   "resolutions": {
     "@aptre/protobuf-es-lite": "^0.4.1"

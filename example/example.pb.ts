@@ -3,7 +3,7 @@
 /* eslint-disable */
 
 import type { MessageType, PartialFieldInfo } from '@aptre/protobuf-es-lite'
-import { createMessageType, Message, ScalarType } from '@aptre/protobuf-es-lite'
+import { createMessageType, ScalarType } from '@aptre/protobuf-es-lite'
 
 export const protobufPackage = 'example'
 
@@ -12,12 +12,12 @@ export const protobufPackage = 'example'
  *
  * @generated from message example.EchoMsg
  */
-export type EchoMsg = Message<{
+export interface EchoMsg {
   /**
    * @generated from field: string body = 1;
    */
   body?: string
-}>
+}
 
 // EchoMsg contains the message type declaration for EchoMsg.
 export const EchoMsg: MessageType<EchoMsg> = createMessageType({
