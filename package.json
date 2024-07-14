@@ -44,7 +44,7 @@
   "devDependencies": {
     "@aptre/common": "^0.17.0",
     "depcheck": "^1.4.7",
-    "prettier": "^3.2.5",
+    "prettier": "^3.3.3",
     "rimraf": "^6.0.0",
     "typescript": "^5.1.6"
   },
