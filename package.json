@@ -42,7 +42,7 @@
     "precommit": "npm run format"
   },
   "devDependencies": {
-    "@aptre/common": "^0.17.0",
+    "@aptre/common": "^0.18.0",
     "depcheck": "^1.4.7",
     "prettier": "^3.3.3",
     "rimraf": "^6.0.0",
