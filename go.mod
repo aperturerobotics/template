@@ -5,14 +5,14 @@ go 1.22
 require (
 	github.com/aperturerobotics/common v0.18.3 // latest
 	github.com/aperturerobotics/protobuf-go-lite v0.6.5 // latest
-	github.com/aperturerobotics/starpc v0.33.6 // latest
+	github.com/aperturerobotics/starpc v0.33.8 // latest
 )
 
 require github.com/pkg/errors v0.9.1 // indirect
 
 require (
 	github.com/aperturerobotics/json-iterator-lite v1.0.0 // indirect
-	github.com/aperturerobotics/util v1.24.0 // indirect
+	github.com/aperturerobotics/util v1.25.7 // indirect
 	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.3.0 // indirect
 	github.com/ipfs/go-cid v0.4.1 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.7 // indirect
@@ -32,7 +32,7 @@ require (
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	github.com/spaolacci/murmur3 v1.1.0 // indirect
 	golang.org/x/crypto v0.23.0 // indirect
-	golang.org/x/exp v0.0.0-20240707233637-46b078467d37 // indirect
+	golang.org/x/exp v0.0.0-20240719175910-8a7402abbf56 // indirect
 	golang.org/x/sys v0.20.0 // indirect
 	google.golang.org/protobuf v1.34.2 // indirect
 	lukechampine.com/blake3 v1.2.1 // indirect
