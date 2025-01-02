@@ -20,7 +20,10 @@
   },
   "type": "module",
   "scripts": {
-    "build": "tsc --project tsconfig.json --noEmit false --outDir ./dist/",
+    "dev": "vite",
+    "serve": "npm run dev",
+    "preview": "vite preview",
+    "build": "tsc -b && vite build",
     "check": "npm run typecheck",
     "typecheck": "tsc --noEmit",
     "deps": "depcheck --ignore-patterns=.eslintrc.cjs,package.json --ignores depcheck,rimraf,prettier,typescript,starpc,@go/github.com,@aptre/common",
@@ -43,13 +46,20 @@
   },
   "devDependencies": {
     "@aptre/common": "^0.20.0",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "@vitejs/plugin-react": "^4.3.4",
     "depcheck": "^1.4.7",
+    "globals": "^15.14.0",
     "prettier": "^3.3.3",
     "rimraf": "^6.0.0",
-    "typescript": "^5.6.2"
+    "typescript": "^5.6.2",
+    "vite": "^6.0.7"
   },
   "dependencies": {
     "@aptre/protobuf-es-lite": "^0.4.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "starpc": "^0.36.0"
   },
   "resolutions": {
