@@ -45,7 +45,7 @@
     "precommit": "npm run format"
   },
   "devDependencies": {
-    "@aptre/common": "^0.21.2",
+    "@aptre/common": "^0.22.0",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^4.4.0",
@@ -60,7 +60,7 @@
     "@aptre/protobuf-es-lite": "^0.4.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "starpc": "^0.38.1"
+    "starpc": "^0.39.0"
   },
   "resolutions": {
     "@aptre/protobuf-es-lite": "^0.4.1"
