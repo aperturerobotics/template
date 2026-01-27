@@ -1,8 +1,8 @@
 module github.com/aperturerobotics/template
 
-go 1.24
+go 1.25
 
-toolchain go1.24.2
+toolchain go1.25.6
 
 replace (
 	// This fork uses go-protobuf-lite and adds post-quantum crypto support.
@@ -13,19 +13,19 @@ replace (
 )
 
 require (
-	github.com/aperturerobotics/common v0.22.7 // latest
+	github.com/aperturerobotics/common v0.24.0 // latest
 	github.com/aperturerobotics/json-iterator-lite v1.0.1-0.20250712004945-4e5f8882b0b8 // indirect
-	github.com/aperturerobotics/protobuf-go-lite v0.9.1 // latest
-	github.com/aperturerobotics/starpc v0.39.6 // latest
-	github.com/aperturerobotics/util v1.31.0 // indirect
+	github.com/aperturerobotics/protobuf-go-lite v0.11.0 // latest
+	github.com/aperturerobotics/starpc v0.42.0 // latest
+	github.com/aperturerobotics/util v1.32.0 // indirect
 )
 
 require (
-	github.com/coder/websocket v1.8.13 // indirect
+	github.com/coder/websocket v1.8.14 // indirect
 	github.com/ipfs/go-cid v0.5.0 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.10 // indirect
 	github.com/libp2p/go-buffer-pool v0.1.0 // indirect
-	github.com/libp2p/go-libp2p v0.42.0 // indirect
+	github.com/libp2p/go-libp2p v0.46.0 // indirect
 	github.com/libp2p/go-yamux/v4 v4.0.1 // indirect
 	github.com/minio/sha256-simd v1.0.1 // indirect
 	github.com/mr-tron/base58 v1.2.0 // indirect
