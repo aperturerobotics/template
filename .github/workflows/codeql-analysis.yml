@@ -26,7 +26,6 @@ jobs:
       matrix:
         language: [ 'go', 'javascript' ]
         go: ['1.25']
-        node: [25.x]
         # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python', 'ruby' ]
         # Learn more about CodeQL language support at https://aka.ms/codeql-docs/language-support
 
@@ -39,11 +38,7 @@ jobs:
       with:
         go-version: ${{ matrix.go }}
 
-    - name: Setup Node.JS ${{ matrix.node }}
-      uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 # v6.2.0
-      with:
-        node-version: ${{ matrix.node }}
-        cache: 'yarn'
+    - uses: oven-sh/setup-bun@v2
 
     - name: Initialize CodeQL
       uses: github/codeql-action/init@b20883b0cd1f46c72ae0ba6d1090936928f9fa30 # v4.32.0
