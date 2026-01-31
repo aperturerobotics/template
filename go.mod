@@ -12,17 +12,17 @@ replace (
 
 require (
 	github.com/aperturerobotics/common v0.28.0 // master
-	github.com/aperturerobotics/json-iterator-lite v1.0.1-0.20250712004945-4e5f8882b0b8 // indirect
+	github.com/aperturerobotics/json-iterator-lite v1.0.1-0.20251104042408-0c9eb8a3f726 // indirect
 	github.com/aperturerobotics/protobuf-go-lite v0.12.0 // latest
-	github.com/aperturerobotics/starpc v0.43.1 // latest
-	github.com/aperturerobotics/util v1.32.0 // indirect
+	github.com/aperturerobotics/starpc v0.44.0 // latest
+	github.com/aperturerobotics/util v1.32.3 // indirect
 )
 
 require (
 	github.com/aperturerobotics/abseil-cpp v0.0.0-20260131110040-4bb56e2f9017 // indirect
 	github.com/aperturerobotics/cli v1.1.0 // indirect
 	github.com/aperturerobotics/go-protoc-wasi v0.0.0-20260131050911-b5f94b044584 // indirect
-	github.com/aperturerobotics/protobuf v0.0.0-20260131033322-bd4a2148b9c4 // indirect
+	github.com/aperturerobotics/protobuf v0.0.0-20260131105503-b82131c27d52 // indirect
 	github.com/coder/websocket v1.8.14 // indirect
 	github.com/ipfs/go-cid v0.5.0 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.10 // indirect
@@ -43,9 +43,9 @@ require (
 	github.com/spaolacci/murmur3 v1.1.0 // indirect
 	github.com/tetratelabs/wazero v1.11.0 // indirect
 	github.com/xrash/smetrics v0.0.0-20250705151800-55b8f293f342 // indirect
-	golang.org/x/crypto v0.37.0 // indirect
+	golang.org/x/crypto v0.45.0 // indirect
 	golang.org/x/exp v0.0.0-20250305212735-054e65f0b394 // indirect
 	golang.org/x/mod v0.32.0 // indirect
-	golang.org/x/sys v0.38.0 // indirect
+	golang.org/x/sys v0.40.0 // indirect
 	lukechampine.com/blake3 v1.4.0 // indirect
 )
