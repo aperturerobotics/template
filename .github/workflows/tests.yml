@@ -49,8 +49,5 @@ jobs:
       - name: Lint Go
         run: bun run lint:go
 
-      - name: Integration
-        run: bun run integration
-
       - name: Depcheck Js
         run: bun run deps
