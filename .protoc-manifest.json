@@ -1,7 +1,7 @@
 {
-  "version": 1,
-  "protocFlagsHash": "fb6a686914d206406bcebf60adf604d58b4a9376f1caeb12b2be58fe159f43b6",
-  "toolVersions": "protoc=embedded,protobuf-go-lite=v0.12.0,starpc=v0.42.0,protobuf-es-lite=^0.5.0",
+  "version": 2,
+  "protocFlagsHash": "1152cdb8a3e3d48a1e6178bbfe94a1c2035c3ac41634404c16e918bc13d51798",
+  "toolVersions": "protoc=embedded,protobuf-go-lite=v0.12.0,starpc=v0.44.0,protobuf-es-lite=^0.5.3",
   "packages": {
     "github.com/aperturerobotics/template/example": {
       "hash": "393780feb3fab0309f4e5d0feefd0fa62ad32558bc76972db319a4b24be97a92",
@@ -21,8 +21,7 @@
       ],
       "protoFiles": [
         "example/example.proto"
-      ],
-      "lastGenerated": "2026-01-30T20:41:24.680662-08:00"
+      ]
     }
   }
 }

@@ -18,7 +18,7 @@ See [protobuf-project] for a more extensive example.
 Start by downloading the dependencies:
 
 ```bash
-yarn
+bun install
 ```
 
 Protobuf imports use Go paths and package names:
@@ -41,26 +41,26 @@ To generate the protobuf files:
 
 ```bash
 git add -A
-yarn install
-yarn gen
+bun install
+bun run gen
 ```
 
 ## Commands
 
 The `aptre` CLI replaces Make for building Go projects with protobuf support.
 
-Available yarn scripts:
+Available bun scripts:
 
-| Command          | Description                                  |
-| ---------------- | -------------------------------------------- |
-| `yarn gen`       | Generate protobuf code (Go, TypeScript, C++) |
-| `yarn gen:force` | Force regenerate all protobuf files          |
-| `yarn test`      | Run all tests (Go + JS)                      |
-| `yarn lint`      | Run linters (Go + JS)                        |
-| `yarn lint:go`   | Run golangci-lint                            |
-| `yarn lint:js`   | Run ESLint on TypeScript                     |
-| `yarn format`    | Format all code (Go + JS)                    |
-| `yarn build`     | Build TypeScript and Vite                    |
+| Command             | Description                                  |
+| ------------------- | -------------------------------------------- |
+| `bun run gen`       | Generate protobuf code (Go, TypeScript, C++) |
+| `bun run gen:force` | Force regenerate all protobuf files          |
+| `bun run test`      | Run all tests (Go + JS)                      |
+| `bun run lint`      | Run linters (Go + JS)                        |
+| `bun run lint:go`   | Run golangci-lint                            |
+| `bun run lint:js`   | Run ESLint on TypeScript                     |
+| `bun run format`    | Format all code (Go + JS)                    |
+| `bun run build`     | Build TypeScript and Vite                    |
 
 The `aptre` CLI can also be used directly:
 
