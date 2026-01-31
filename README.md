@@ -40,46 +40,53 @@ message GetBusInfoResponse {
 To generate the protobuf files:
 
 ```bash
-$ git add -A
-$ yarn install
-$ yarn gen
+git add -A
+yarn install
+yarn gen
 ```
 
-The Makefile will download the tools using Go to a bin dir.
+## Commands
 
-## Makefile
+The `aptre` CLI replaces Make for building Go projects with protobuf support.
 
-The available make targets are:
+Available yarn scripts:
 
- - `gengo`: Generate protobuf files.
- - `test`: run go test -v ./...
- - `lint`: run golangci-lint on the project.
- - `fix`: run golangci-lint --fix on the project.
- - `list`: list go module dependencies
- - `outdated`: list outdated go module dependencies
+| Command          | Description                                  |
+| ---------------- | -------------------------------------------- |
+| `yarn gen`       | Generate protobuf code (Go, TypeScript, C++) |
+| `yarn gen:force` | Force regenerate all protobuf files          |
+| `yarn test`      | Run all tests (Go + JS)                      |
+| `yarn lint`      | Run linters (Go + JS)                        |
+| `yarn lint:go`   | Run golangci-lint                            |
+| `yarn lint:js`   | Run ESLint on TypeScript                     |
+| `yarn format`    | Format all code (Go + JS)                    |
+| `yarn build`     | Build TypeScript and Vite                    |
 
-To generate the TypeScript and Go code:
+The `aptre` CLI can also be used directly:
 
- - `yarn install`
- - `yarn gen`
+```bash
+# Generate protobuf files
+go run github.com/aperturerobotics/common/cmd/aptre generate
 
-## Developing on MacOS
+# Force regeneration
+go run github.com/aperturerobotics/common/cmd/aptre generate --force
 
-On MacOS, some homebrew packages are required for `yarn gen`:
+# Run tests
+go run github.com/aperturerobotics/common/cmd/aptre test
 
+# Lint code
+go run github.com/aperturerobotics/common/cmd/aptre lint
+
+# Format code
+go run github.com/aperturerobotics/common/cmd/aptre format
 ```
-brew install bash make coreutils gnu-sed findutils protobuf
-brew link --overwrite protobuf
-```
 
-Add to your .bashrc or .zshrc:
+## C++ Support
 
-```
-export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
-export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
-export PATH="/opt/homebrew/opt/findutils/libexec/gnubin:$PATH"
-export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
-```
+C++ protobuf files (`.pb.cc` and `.pb.h`) are generated alongside Go and TypeScript
+files. See [common] for CMake integration instructions.
+
+[common]: https://github.com/aperturerobotics/common
 
 ## Support
 
