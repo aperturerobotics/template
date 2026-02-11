@@ -1,22 +1,20 @@
 {
   "version": 2,
-  "protocFlagsHash": "1152cdb8a3e3d48a1e6178bbfe94a1c2035c3ac41634404c16e918bc13d51798",
-  "toolVersions": "protoc=embedded,protobuf-go-lite=v0.12.0,starpc=v0.44.0,protobuf-es-lite=^0.5.3",
+  "protocFlagsHash": "f83552054c9ab83accb174c598c8e5617f0a99a2f2d19e22d8c2123319065584",
+  "toolVersions": "protoc=embedded,protobuf-go-lite=v0.12.1,starpc=v0.46.1,protobuf-es-lite=^0.5.3",
   "packages": {
     "github.com/aperturerobotics/template/example": {
       "hash": "393780feb3fab0309f4e5d0feefd0fa62ad32558bc76972db319a4b24be97a92",
       "generatedFiles": [
-        "vendor/github.com/aperturerobotics/template/example/example.pb.cc",
-        "vendor/github.com/aperturerobotics/template/example/example.pb.go",
-        "vendor/github.com/aperturerobotics/template/example/example.pb.h",
-        "vendor/github.com/aperturerobotics/template/example/example.pb.ts",
-        "vendor/github.com/aperturerobotics/template/example/example_srpc.pb.go",
-        "vendor/github.com/aperturerobotics/template/example/example_srpc.pb.ts",
         "example/example.pb.cc",
+        "example/example_srpc.pb.cpp",
+        "example/example_srpc.pb.hpp",
         "example/example.pb.go",
         "example/example.pb.h",
+        "example/example.pb.rs",
         "example/example.pb.ts",
         "example/example_srpc.pb.go",
+        "example/example_srpc.pb.rs",
         "example/example_srpc.pb.ts"
       ],
       "protoFiles": [
