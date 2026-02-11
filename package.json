@@ -47,10 +47,10 @@
     "precommit": "bun run format"
   },
   "devDependencies": {
-    "@aptre/common": "^0.28.0",
-    "@types/react": "^19.1.2",
+    "@aptre/common": "^0.30.3",
+    "@types/react": "^19.2.13",
     "@types/react-dom": "^19.1.2",
-    "@vitejs/plugin-react": "^5.0.0",
+    "@vitejs/plugin-react": "^5.1.4",
     "depcheck": "^1.4.7",
     "prettier": "^3.5.3",
     "rimraf": "^6.0.0",
@@ -61,7 +61,7 @@
     "@aptre/protobuf-es-lite": "^0.5.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "starpc": "^0.44.0"
+    "starpc": "^0.46.2"
   },
   "resolutions": {
     "@aptre/protobuf-es-lite": "^0.5.0"
