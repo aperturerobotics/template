@@ -18,9 +18,11 @@ yarn-error.log*
 
 .#*
 debug.test*
+__debug*
 /dist
 .*.swp
 .vs/
 .vscode/
 !.vscode/launch.json
 /vendor/
+*.test

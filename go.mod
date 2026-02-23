@@ -20,9 +20,6 @@ require (
 
 require (
 	github.com/aperturerobotics/abseil-cpp v0.0.0-20260131110040-4bb56e2f9017 // indirect
-	github.com/aperturerobotics/cli v1.1.0 // indirect
-	github.com/aperturerobotics/go-protoc-gen-prost v0.0.0-20260204215916-dc1f0fed8cfc // indirect
-	github.com/aperturerobotics/go-protoc-wasi v0.0.0-20260131050911-b5f94b044584 // indirect
 	github.com/aperturerobotics/protobuf v0.0.0-20260203024654-8201686529c4 // indirect
 	github.com/coder/websocket v1.8.14 // indirect
 	github.com/ipfs/go-cid v0.5.0 // indirect
@@ -42,11 +39,8 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/sirupsen/logrus v1.9.4 // indirect
 	github.com/spaolacci/murmur3 v1.1.0 // indirect
-	github.com/tetratelabs/wazero v1.11.0 // indirect
-	github.com/xrash/smetrics v0.0.0-20250705151800-55b8f293f342 // indirect
 	golang.org/x/crypto v0.45.0 // indirect
 	golang.org/x/exp v0.0.0-20250305212735-054e65f0b394 // indirect
-	golang.org/x/mod v0.33.0 // indirect
 	golang.org/x/sys v0.40.0 // indirect
 	lukechampine.com/blake3 v1.4.0 // indirect
 )
