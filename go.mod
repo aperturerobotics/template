@@ -11,9 +11,9 @@ replace (
 )
 
 require (
-	github.com/aperturerobotics/common v0.30.3 // master
+	github.com/aperturerobotics/common v0.30.6 // master
 	github.com/aperturerobotics/json-iterator-lite v1.0.1-0.20251104042408-0c9eb8a3f726 // indirect
-	github.com/aperturerobotics/protobuf-go-lite v0.12.1 // latest
+	github.com/aperturerobotics/protobuf-go-lite v0.12.2 // latest
 	github.com/aperturerobotics/starpc v0.46.2 // latest
 	github.com/aperturerobotics/util v1.32.3 // indirect
 )
