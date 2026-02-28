@@ -3,10 +3,10 @@ module github.com/aperturerobotics/template
 go 1.25
 
 require (
-	github.com/aperturerobotics/common v0.30.7 // master
+	github.com/aperturerobotics/common v0.32.0 // master
 	github.com/aperturerobotics/json-iterator-lite v1.0.1-0.20251104042408-0c9eb8a3f726 // indirect
 	github.com/aperturerobotics/protobuf-go-lite v0.12.2 // latest
-	github.com/aperturerobotics/starpc v0.47.2-0.20260228105112-f1337c4314e9 // latest
+	github.com/aperturerobotics/starpc v0.48.0 // latest
 	github.com/aperturerobotics/util v1.32.4 // indirect
 )
 

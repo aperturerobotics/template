@@ -52,7 +52,7 @@
     "singleQuote": true
   },
   "devDependencies": {
-    "@aptre/common": "^0.30.3",
+    "@aptre/common": "^0.32.0",
     "@types/react": "^19.2.13",
     "@types/react-dom": "^19.1.2",
     "@typescript/native-preview": "^7.0.0-dev.20250220",
@@ -67,7 +67,7 @@
     "@aptre/protobuf-es-lite": "^1.0.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "starpc": "^0.46.2"
+    "starpc": "^0.48.0"
   },
   "resolutions": {
     "@aptre/protobuf-es-lite": "^1.0.0"
