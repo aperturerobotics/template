@@ -1,11 +1,9 @@
 ## Project Template
 
-[![GoDoc Widget]][GoDoc] [![Go Report Card Widget]][Go Report Card]
+[![GoDoc Widget]][GoDoc]
 
 [GoDoc]: https://godoc.org/github.com/aperturerobotics/template
 [GoDoc Widget]: https://godoc.org/github.com/aperturerobotics/template?status.svg
-[Go Report Card Widget]: https://goreportcard.com/badge/github.com/aperturerobotics/template
-[Go Report Card]: https://goreportcard.com/report/github.com/aperturerobotics/template
 
 This is a template for Aperture Robotics projects.
 
